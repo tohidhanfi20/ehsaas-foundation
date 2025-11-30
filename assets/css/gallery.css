@@ -116,20 +116,24 @@
     }
 
     .brand-icon {
-      width: 48px;
-      height: 48px;
+      width: 70px;
+      height: 70px;
       border-radius: 12px;
-      background: linear-gradient(135deg, var(--teal-500), var(--navy-600));
-      display: grid;
-      place-items: center;
-      color: #fff;
-      font-weight: 700;
-      letter-spacing: 0.08em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+    .brand-icon img {
+      width: 100%;
+      height: 100%;
+      object-fit: contain;
+      border-radius: 12px;
     }
 
     .brand-text span {
       display: block;
-      font-size: 1.05rem;
+      font-size: 0.85rem;
       letter-spacing: 0.04em;
       font-weight: 600;
       color: var(--navy-900);
@@ -137,7 +141,7 @@
     }
 
     .brand-text strong {
-      font-size: 0.72rem;
+      font-size: 0.6rem;
       letter-spacing: 0.3em;
       text-transform: uppercase;
       color: var(--text-500);
